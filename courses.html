@@ -2,255 +2,129 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Artur Aragão Everton - Junior Developer & AI Engineering Trainee</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meus Cursos e Projetos</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #e8f5e9;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 20px;
+      background-color: #f2f2f2;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
     }
-
-    header {
-      background: #2e7d32;
-      color: #fff;
-      padding: 1.5rem 0;
+    h1 {
       text-align: center;
-      width: 100%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      color: #222;
     }
-
-    header h1 {
+    .curso {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .curso h2 {
       margin: 0;
-      font-size: 2.8rem;
-      font-weight: 700;
-    }
-
-    header .subtitle {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-      font-weight: 300;
-      color: #c8e6c9;
-    }
-
-    main {
-      width: 90%;
-      max-width: 960px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .section {
-      margin-bottom: 2.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid #e0e0e0;
-    }
-
-    .section:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      color: #43a047;
-      margin-bottom: 1.5rem;
-      border-left: 5px solid #43a047;
-      padding-left: 10px;
-      font-weight: 600;
-    }
-
-    .project-buttons {
-      display: flex;
-      justify-content: center;
-      margin-top: 1.5rem;
-      margin-bottom: 2.5rem;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .project-button {
-      background-color: #43a047;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      font-weight: 600;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .project-button:hover {
-      background-color: #2e7d32;
-      transform: translateY(-2px);
-    }
-
-    .project-button i {
       font-size: 1.2em;
+      color: #0066cc;
     }
-
-    .intro-text {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-      color: #555;
-    }
-
-    .expertise-columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-
-    .expertise-column {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .expertise-column h3 {
-      font-size: 1.4rem;
-      color: #555;
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    .expertise-column ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .expertise-column ul li {
-      margin-bottom: 0.5rem;
-      padding-left: 1.5rem;
-      position: relative;
-      font-size: 1rem;
-    }
-
-    .expertise-column ul li:before {
-      content: '•';
-      color: #43a047;
-      position: absolute;
-      left: 0;
-      font-size: 1.2em;
-      line-height: 1;
-    }
-
-    .expertise-column ul ul {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      margin-left: 1rem;
-    }
-
-    .expertise-column ul ul li {
-      font-size: 0.95rem;
-      margin-bottom: 0.3rem;
-      padding-left: 1rem;
-    }
-
-    .expertise-column ul ul li:before {
-      content: '-';
-      color: #777;
-      font-size: 1em;
-    }
-
-    footer {
-      background: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-      width: 100%;
-      margin-top: auto;
-    }
-
-    footer a {
-      color: #c8e6c9;
+    .links a {
+      margin-right: 15px;
+      color: #0077cc;
       text-decoration: none;
-      transition: color 0.3s ease;
     }
-
-    footer a:hover {
-      color: #fff;
+    .links a:hover {
       text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      header .subtitle {
-        font-size: 1rem;
-      }
-
-      main {
-        width: 95%;
-        padding: 1rem;
-      }
-
-      .section-title {
-        font-size: 1.6rem;
-      }
-
-      .expertise-columns {
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      .project-button {
-        width: 90%;
-        max-width: none;
-      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Artur Aragão Everton</h1>
-    <p class="subtitle">Junior Developer | AI, Security & Platform Engineering Trainee | Computer Science Student</p>
-  </header>
+  <h1>🧠 Meus Cursos e Projetos</h1>
 
-  <main>
-    <section class="section">
-      <h2 class="section-title">🚀 Featured Projects & Learning Journey</h2>
-      <div class="project-buttons">
-        <a href="courses.html" target="_blank" rel="noopener noreferrer" class="project-button">
-          🧠 Meus Cursos e Projetos
-        </a>
-        <a href="https://fabiobeverton.github.io/everton-showcase/" target="_blank" rel="noopener noreferrer" class="project-button">
-          🎨 Everton Showcase (Fabio)
-        </a>
-      </div>
-    </section>
+  <div class="curso">
+    <h2>🔷 IBM Generative AI Engineering</h2>
+    <p>🏫 Coursera</p>
+    <div class="links">
+      <a href="https://coursera.org/professional-certificates/ibm-generative-ai-engineering" target="_blank">Curso</a>
+      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/IBM%20Generative%20AI%20Engineering" target="_blank">Projeto</a>
+    </div>
+  </div>
 
-    <!-- restante do conteúdo permanece igual -->
+  <div class="curso">
+    <h2>🔷 LangChain Full Stack + Firebase/Vercel</h2>
+    <p>🏫 GitHub</p>
+    <div class="links">
+      <a href="https://github.com/seuperfil/saas-llm-fullstack" target="_blank">Curso</a>
+      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/LangChain%20Full%20Stack%20%2B%20Firebase-Vercel" target="_blank">Projeto</a>
+    </div>
+  </div>
 
-  </main>
+  <div class="curso">
+    <h2>🔷 Unity ML-Agents Toolkit</h2>
+    <p>🏫 GitHub</p>
+    <div class="links">
+      <a href="https://github.com/Unity-Technologies/ml-agents" target="_blank">Curso</a>
+      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/Unity%20ML-Agents%20Toolkit" target="_blank">Projeto</a>
+    </div>
+  </div>
 
-  <footer>
-    <p>
-      <a href="https://github.com/art2324" target="_blank" rel="noopener noreferrer">GitHub Profile</a> |
-      <a href="https://www.linkedin.com/in/arturareverton/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-      <a href="mailto:artur.email@example.com" rel="noopener noreferrer">Email</a>
-    </p>
-  </footer>
+  <div class="curso">
+    <h2>🔷 MIT xUnity – Game AI for Autonomous Characters</h2>
+    <p>🏫 edX</p>
+    <div class="links">
+      <a href="https://edx.org/course/game-ai" target="_blank">Curso</a>
+      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/MIT%20xUnity%20Game%20AI" target="_blank">Projeto</a>
+    </div>
+  </div>
+
+  <div class="curso">
+    <h2>🔷 PromptLayer + LangSmith / Promptfoo</h2>
+    <p>🏫 Sites diversos</p>
+    <div class="links">
+      <a href="https://promptlayer.com" target="_blank">PromptLayer</a>
+      <a href="https://langchain.plus" target="_blank">LangSmith</a>
+      <a href="https://promptfoo.dev" target="_blank">Promptfoo</a>
+      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/PromptLayer%20e%20LangSmith" target="_blank">Projeto</a>
+    </div>
+  </div>
+
+  <div class="curso">
+    <h2>🔷 Deep RL Specialization – Univ. of Alberta</h2>
+    <p>🏫 Coursera</p>
+    <div class="links">
+      <a href="https://coursera.org/specializations/deep-reinforcement-learning" target="_blank">Curso</a>
+      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/Deep%20RL%20Specialization" target="_blank">Projeto</a>
+    </div>
+  </div>
+
+  <div class="curso">
+    <h2>🔷 Stanford CS224N – NLP com Deep Learning</h2>
+    <p>🏫 Stanford</p>
+    <div class="links">
+      <a href="https://cs224n.stanford.edu" target="_blank">Curso</a>
+      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/Stanford%20CS224N" target="_blank">Projeto</a>
+    </div>
+  </div>
+
+  <div class="curso">
+    <h2>🔷 DevSecOps for AI Pipelines</h2>
+    <p>🏫 Google / AWS / GitHub</p>
+    <div class="links">
+      <a href="https://cloud.google.com/security" target="_blank">Google Cloud</a>
+      <a href="https://github.com/features/security" target="_blank">GitHub</a>
+      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/DevSecOps%20AI%20Pipelines" target="_blank">Projeto</a>
+    </div>
+  </div>
+
+  <div class="curso">
+    <h2>🔷 OWASP Top 10 LLM</h2>
+    <p>🏫 OWASP</p>
+    <div class="links">
+      <a href="https://owasp.org" target="_blank">Curso</a>
+      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/OWASP%20Top%2010%20LLM" target="_blank">Projeto</a>
+    </div>
+  </div>
+
+  <!-- Você pode seguir o mesmo padrão para os outros cursos -->
+
 </body>
 </html>
